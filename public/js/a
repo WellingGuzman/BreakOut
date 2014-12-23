@@ -1,0 +1,27 @@
+                var r = parseInt(Math.random()*256);
+                var b = parseInt(Math.random()*256);
+                var g = parseInt(Math.random()*256);
+                var c = parseInt(Math.random()*3);
+                //var color = "rgb("+r+","+b+","+g+")";
+
+                switch(c){
+                    case 0:
+                        if ( ((r*change) > 255 && change > 0) || ((r*change) < 0 && change < 0 ) ){
+                            change = -change;
+                        }
+                        r = r*change;
+                        break;
+                    case 1:
+                        if ( ((b*change) > 255 && change > 0) || ((b*change) < 0 && change < 0 ) ){
+                            change = -change;
+                        }
+                        b = b*change;
+                        break;
+                    case 2:
+                        if ( ((g*change) > 255 && change > 0) || ((g*change) < 0 && change < 0 ) ){
+                            change = -change;
+                        }
+                        g = g*change;
+                        break;
+                }
+                color = "rgb("+r+","+b+","+g+")";

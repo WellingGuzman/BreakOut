@@ -1,0 +1,66 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size:14px;
+}
+
+body {
+	background: #F2F2F2;
+}
+
+#gameScreenWrapper {
+	margin:0px auto;
+	width:600px;
+	height:400px;
+    position:relative;
+}
+#gameScreen {
+	border: solid 1px #DDD;
+	background: #FFF;
+    padding:0px;
+}
+
+header{
+    width:600px;
+    margin:0px auto;
+    border:1px solid #DDD;
+    background:#FFF;
+    text-align:center;
+    margin-bottom: 10px;
+}
+#restart, #pauseStart {
+    width:300px;
+    margin:5px;
+    padding: 5px;
+    background:#F5F5F5;
+    font-size: 15px;
+}
+#message {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:999;
+    font-size: 20px;
+    padding-top: 33%;
+    padding-bottom:33%;
+    text-align: center;
+    width:600px;
+}
+#messageBackground {
+    background: #1E90FF;
+    opacity:0.4;
+    filter:alpha(opacity=40);
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:998px;
+    width:600px;
+    height:400px;
+}
+footer{
+    width:600px;
+    margin:10px auto;
+    font-weight:bold;
+    text-align:right;
+}
